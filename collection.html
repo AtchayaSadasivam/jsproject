@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electronic Gagets store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <img src="./asset/logo.jpg" alt="logo">
+        <h1>ELECTRONIC GADGETS STORE</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home <a href="#"><i class="fa-solid fa-house"></i></a></a></li>
+                <li><a href="collection.html">Collections</a></li>
+                <li><a href="card.html">Cart<a href="#"><i class="fa-solid fa-cart-shopping"></i></a></a></li>
+                <li><a href="account.html">Account</a></li>
+                
+            </ul>
+        </nav>
+    </header><br>
+    <br>
+    <form>
+        <input type="checkbox" id="chk" name="checkboxx" onclick="chkb()">
+        <label for="chk">To set the page as dark mode and light mode.</label>
+    </form>
+     <br>
+    <div class="container bg-info" id="collection">
+        <p style="background-color: red;border-radius: 30px;width: 800px;text-align: center;transform: translateX(250px); font-size: 35px;">Collections of Electronic GAGETS</p>
+        </div>
+        
+        <div id="div1"></div>
+
+        <script>
+
+let val = document.getElementById('div1');
+        let obj = [
+            {
+                id: 1,
+                name: "Airpots",
+                rating:"&#9734 &#9734 &#9734 &#9734 &#9734",
+                price: 20000,
+                description: "AirPods are lightweight and offer a contoured design. They sit at just the right angle for comfort and to better direct audio to your ear.",
+                Image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbxpGrGn5UaXeSRg47EnwDjl55So6fIWvG3w&s"
+            
+            },
+            {
+                id: 2,
+                name: "Headphone",
+                rating:"&#9734 &#9734 &#9734 &#9734 &#9734",
+                price: 75000,
+                description: "Headphones are electronic audio device that people wear over their ears. They let people hear sounds on a walkman, MP3 player.",
+                Image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYmMpjMDDhEgRHGFextfKHVUVYVRBcTdFDCg&s"
+           
+            },
+            {
+                id: 3,
+                name: "Laptop",
+                rating:"&#9734 &#9734 &#9734 &#9734 &#9734",
+                price: 75000,
+                description: "A laptop, sometimes called a notebook computer by manufacturers, is a battery- or AC-powered personal computer (PC) smaller than a briefcase.",
+                Image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGxlbm92byUyMGxhcHRvcHxlbnwwfHwwfHx8MA%3D%3D"
+            },
+            {
+                id: 4,
+                name: "Mouse",
+                rating:"&#9734 &#9734 &#9734 &#9734 &#9734",
+                price: 3600,
+                description: "Wired USB Connection16000 dpi G HERO Optical Sensor6 Programmable Buttons1000Hz Ultrapolling1ms Response Time",
+                Image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpu7ekxvMNaHMwJq8ocIkaBQtQqvCAhPpaqLu0t7UiXRDpSMkRl5UJOniV8O9ixY8ODkg&usqp=CAU"
+            },
+            {
+                id: 5,
+                name: "Mobile Phone",
+                rating:"&#9734 &#9734 &#9734 &#9734 &#9734",
+                price: 39000,
+                description: "mobile telephone, portable device for connecting to a telecommunications network in order to transmit and receive voice, video, or other data.",
+                Image: "https://5.imimg.com/data5/SELLER/Default/2023/8/337487292/ST/JB/TD/189620676/oneplus-nord-ce-3-5g-500x500.jpg"
+            },
+            {
+                id: 6,
+                name: "Smart Watch",
+                rating:"&#9734 &#9734 &#9734 &#9734 &#9734",
+                price: 4500,
+                description: "A smartwatch is a portable device worn on the wrist that supports apps and acts as an extension of your mobile phone in some cases.",
+                Image: "https://m.media-amazon.com/images/I/41Gsavuvv0L._SL500_.jpg"
+            },
+            {
+                id: 7,
+                name: "Bluetooth Speaker",
+                rating:"&#9734 &#9734 &#9734 &#9734 &#9734",
+                price: 5000,
+                description: "High quality wireless speaker enjoy the wonderful music with rechargeable battery that provides up to hours of non-stop",
+                Image: "https://m.media-amazon.com/images/I/51h31riL02L._AC_.jpg"
+            },
+            {
+                id: 8,
+                name: "Speaker",
+                rating:"&#9734 &#9734 &#9734 &#9734 &#9734",
+                price: 15000,
+                description: "Speakers are standard output devices used with computer systems that enable the listener to listen to a sound as an outcome.",
+                Image: "https://www.bajaao.com/cdn/shop/collections/mon-400x400_b507e278-bcf6-427b-81ce-50536dad7c55_large.jpg?v=1672916835"
+            },
+            {
+                id: 9,
+                name: "Camera",
+                rating:"&#9734 &#9734 &#9734 &#9734 &#9734",
+                price: 75000,
+                description: "The Canon EOS R6 II camera offers 24MP resolution, faster shooting with burst rates of up to 40 frames per second and an improved autofocus system",
+                Image: "https://fotoforma.pl/userdata/public/assets/MT/Zoptymalizowane%20produkty/Canon/Aparat/12405/Aparat%20Canon%20EOS%20R6%20%2B%20obiektyw%20RF%2024-105mm%20F4-7.1%20IS%20STM.png"
+            },
+            {
+                id: 10,
+                name: "Printer",
+                rating:"&#9734 &#9734 &#9734 &#9734 &#9734",
+                price: 55000,
+                description: "Laser printing is an electrostatic digital printing process. It produces high-quality text and graphics by repeatedly passing a laser beam back and forth over a negatively",
+                Image: "https://5.imimg.com/data5/NM/AK/MY-3529379/laser-printer.jpg"
+            },
+            {
+                id: 11,
+                name: "Game controller",
+                rating:"&#9734 &#9734 &#9734 &#9734 &#9734",
+                price: 47000,
+                description:"A game controller, gaming controller, or simply controller, is an input device or input/output device used with video games or entertainment systems to provide input to a video game.",
+                Image: "https://m.media-amazon.com/images/I/41VkBk0C3hS._AC_UF1000,1000_QL80_.jpg"
+            },
+            {
+                id: 12,
+                name: "Television",
+                rating:"&#9734 &#9734 &#9734 &#9734 &#9734",
+                price: 55000,
+                description: "Creative abstract digital multimedia entertainment and media television broadcasting internet business concept: smart TV display screen with color web interface isolated on white background with reflection effect.",
+                Image: "https://media.istockphoto.com/id/513571887/photo/smart-tv.jpg?s=612x612&w=0&k=20&c=TvPmJHrrw9JldKf9k6rfpFBpv-Pkun5-jJZ4Hiak48E="
+            }
+        ];
+        
+        for(val of obj){
+            div1.innerHTML += `
+                <div class="box">
+                     <img src="${val.Image}" height="250px" alt="${val.name}">
+                    <p class="p-name">${val.name}</p>
+                     <p>${val.description}</p>
+                    <p>${val.rating}</p>
+                    <p>${val.price}</p>
+                    <button onclick="data(${val.id})" class="btn">Add to Cart<a href="#"><i class="fa-solid fa-cart-shopping"></i></a></button>
+                    <button onclick="data(${val})" class="btn" id="texcol"><a href="order.html">BuyNow<a href="#"><i class="fa-solid fa-cart-shopping"></i></a></a></button>
+                </div>
+            `;
+        }
+        let arr=[];
+        if(localStorage.length>0){
+            arr=JSON.parse(localStorage.getItem('Product Id'));
+        }
+        let data = (id) => {
+            arr.push(obj[id-1]);
+            console.log(arr);
+            localStorage.setItem("Product Id",JSON.stringify(arr));
+            
+        };
+        function chkb() {
+        var element = document.body;
+        element.classList.toggle("dark-mode");
+        }
+       
+        
+    </script>
+</body>
+</html>

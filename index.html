@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electronic Gadgets store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <img src="./asset/logo.jpg" alt="logo">
+        <h1>ELECTRONIC GADGETS STORE</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home <a href="#"><i class="fa-solid fa-house"></i></a></a></li>
+                <li><a href="collection.html">Collections</a></li>
+                <li><a href="card.html">Cart<a href="#"><i class="fa-solid fa-cart-shopping"></i></a></a></li>
+                <li><a href="account.html">Account</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+    <div id = "bg-img">
+        <img id="prev" onclick="prev()" src="./asset/rightarrow.jpg" width="50px" height="50px" alt="">
+        <img id="next" onclick="next()" src="./asset/rightarrow.jpg" width="50px" height="50px" alt="">
+        <center><p id="p" style="font-size: 40px; color:wheat; padding: 50px;">Moblie phone</p></center>
+    
+
+        <div class="mini">
+            <img src="./asset/gaget1.jpg.jpg" class="img firstimg" alt="" style="width: 150px;height: 150px;">
+            <img src="./asset/gaget2.jpg.jpg" alt="" class="img" style="width: 150px;height: 150px;">
+            <img src="./asset/gaget3.jpg.jpg" alt="" class="img" style="width: 150px;height: 150px;">
+            <img src="./asset/gaget4.jpg.jpg" alt="" class="img" style="width: 150px;height: 150px;">
+            <img src="./asset/gaget5.jpg.jpg" alt="" class="img" style="width: 150px;height: 150px;">
+
+        </div>  
+     </div>    
+        <footer>
+            <h3>&copy;2024 Electronic Gadgets store.All Rights Reserved. Titan Company Limited</h3>
+        </footer>
+       
+    <script>
+        
+        
+        let img = ['./asset/gaget1.jpg.jpg', './asset/gaget2.jpg.jpg', './asset/gaget3.jpg.jpg' ,'./asset/gaget4.jpg.jpg','./asset/gaget5.jpg.jpg'];
+        const bg = document.getElementById('bg-img');
+        const txt = ['Camera and Mobilephone','Attractive Laptop','Classic and Elegant taps','Good sound Quality Headphone','Electronic Gagets'];
+        text=document.getElementById('p');
+        
+        
+        function Text() {
+            text.innerHTML = txt[i];
+        }
+        let i=0;
+        let j = 0;
+        let images=document.getElementsByClassName('img');
+
+        function next()
+        {
+
+           images[j].classList.remove('firstimg');
+           j++;
+           if(j==img.length){
+           j=0;
+           }
+           
+           images[j].classList.add('firstimg');
+
+           i++;
+           if(i==img.length){
+           i=0;
+           }
+           Text();
+        bg.style.backgroundImage='url("'+img[i]+'")';
+    }
+        function prev()
+   {
+        images[j].classList.remove('firstimg');
+        j--;
+        if(j==-1){
+
+         j=img.length-1;
+
+        }
+        
+        images[j].classList.add('firstimg');
+
+
+        i--;
+        if(i==-1){
+        i=img.length-1;
+        }
+        Text();
+        bg.style.backgroundImage='url("'+img[i]+'")';
+
+    }
+    
+
+    
+   
+        
+    </script>
+</body>
+</html>

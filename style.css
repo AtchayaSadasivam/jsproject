@@ -1,0 +1,228 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: orangered;
+    height: 100px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    display: flex;
+}
+header img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+header h1{
+    font-style: italic;
+    color: white;
+    font-size: xx-large;
+    line-height: 100px;
+}
+nav{
+    display: flex;
+    align-items: flex-end;
+    transform: translateX(350px);
+}
+ul{
+    text-decoration: none;
+    padding: 20px;
+    
+   
+}
+li{
+    display: inline-block;
+    
+    background-color: brown;
+    color: white;
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 4px;
+   
+}
+li:hover{
+    background-color: yellowgreen;
+
+}
+li a:hover{
+    color: black;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+#bg-img{
+    background-image: url('./asset/gaget1.jpg.jpg');
+    height: 100vh;
+    background-size: 100% 100vh;
+    transition: 1.5s;
+    
+}
+#prev{
+    transform: rotate(180deg);
+    position: absolute;
+    top: 330px;
+    left: 0;
+    
+    
+}
+#next{
+    position: absolute;
+    top: 350px;
+    right: 0;
+    
+}
+
+button{
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: aquamarine;
+    border-color: aquamarine;
+    position: relative;
+    
+}
+.card:hover{
+    transform: scale(1.15);
+    
+}
+.card{
+    border:2px solid white;
+    box-shadow: 0 0 15px gray;
+}
+.mini{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.img{
+    opacity: 0.5;
+}
+.firstimg{
+    opacity: 1;
+    border: 5px solid white;
+}
+.txt{
+    font-size: large;
+}
+
+.box {
+    margin: 10px;
+    text-align: center;
+    width: 260px; 
+    border:2px solid white;
+    box-shadow: 0 0 15px orangered;
+}
+.box img {
+    border:2px solid white;
+    box-shadow: 0 0 15px gray;
+    padding: 1px;
+    width: 250px;
+    
+}
+#div1{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:10px;
+    margin-top: 30px;
+    margin-left: 40px;
+}
+
+.box p {
+    margin: 2px 0;
+}
+.box img:hover{
+    transform: scale(1.15);
+}
+.box:hover{
+    background-image:linear-gradient(red,pink,magenta,yellow);
+}
+button:hover{
+    background-color: red;
+    color: aliceblue;
+}
+
+.p-name{
+  color: brown;
+}
+footer{
+    background-color:orangered;
+    color: white;
+   text-align: center;
+   height: 50px;
+   line-height: 50px;
+}
+ button a{
+     color: black;
+}
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+#htxt{
+    text-transform: uppercase;
+    font-size: 30px;
+}
+.login{
+    border:1px solid black;
+    width: 400px;
+    height: 500px;
+    background-image: url('asset/logimg.jpg');
+    color: white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.75);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+.form{
+    display: block;
+    box-sizing: border-box;
+    padding: 40px;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: brightness(40%);
+    flex-direction: column;
+    display: flex;
+    gap: 5px;  
+}
+form h1{
+    font-weight: normal;
+    font-size: 24px;
+    text-shadow: 0px 0px 2px rgba(0,0,0,0.5);
+    margin-bottom: 60px;
+}
+.usn{
+    color: rgba(255,255,255,0.8);
+    text-transform: uppercase;
+    font-size: 10px;
+    letter-spacing: 2px;
+    padding-left: 10px;
+}
+.inpp{
+    background: rgba(255,255,255,0.3);
+    height: 40px;
+    line-height: 40px;
+    border-radius: 20px;
+    padding: 0px 20px;
+    border: none;
+    margin-bottom: 20px;
+    color: white;
+}
+.form button{
+    background: rgb(45,126,231);
+    height: 40px;
+    line-height: 40px;
+    border-radius: 40px;
+    border: none;
+    margin: 10px 0px;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.3);
+    color: white;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+.form button a{
+    color: white;
+}
